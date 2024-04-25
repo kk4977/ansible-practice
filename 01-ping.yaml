@@ -1,5 +1,5 @@
 ---
-- name: Ping the serve
+- name: Ping the server
   hosts: web
   tasks:
     - name: Pinging the server
