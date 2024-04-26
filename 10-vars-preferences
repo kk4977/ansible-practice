@@ -1,10 +1,14 @@
 - name: variables from preferences
   hosts: localhost
+  vars_prompt:
+  - name: Prompt
+    prompt: Please enter the WISHES
   # vars:
   #   WISHES: "wishes from play"
   # vars_files:
   # - vars.yaml
   tasks:
+
   - name: get from args
     # vars:
     #   WISHES: "wishes from TASK"
@@ -12,3 +16,14 @@
       msg: "Hello, Good {{WISHES}}"
 
       #run the command using --> ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 09-vars-args.yaml -e "PERSON=Shiva WISHES=Morning"
+################################
+
+#PREFERENCES################################
+
+# 1. arguments
+# 2. Task level
+# 3. variable files
+# 4. Prompt
+# 5. Play level
+# 6. inventory
+# 7. role level
