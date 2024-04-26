@@ -1,8 +1,8 @@
-- name: variables from arguments
+- name: variables from preferences
   hosts: localhost
   vars:
-    WISHES: "wishes from PLAY"
-  vars_file:
+    WISHES: "wishes from play"
+  vars_files:
   - vars.yaml
   tasks:
   - name: get from args
