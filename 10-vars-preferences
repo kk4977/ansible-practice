@@ -1,8 +1,9 @@
 - name: variables from preferences
   hosts: localhost
   vars_prompt:
-  - name: Prompt
-    prompt: Please enter the WISHES
+  - name: WISHES
+    prompt: Please enter the Wishes
+    private: false
   # vars:
   #   WISHES: "wishes from play"
   # vars_files:
