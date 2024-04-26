@@ -2,8 +2,8 @@
   hosts: localhost
   vars:
     WISHES: "wishes from play"
-  vars_files:
-  - vars.yaml
+  # vars_files:
+  # - vars.yaml
   tasks:
   - name: get from args
     # vars:
