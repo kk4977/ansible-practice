@@ -1,7 +1,7 @@
 - name: variables from preferences
   hosts: localhost
-  vars:
-    WISHES: "wishes from play"
+  # vars:
+  #   WISHES: "wishes from play"
   # vars_files:
   # - vars.yaml
   tasks:
