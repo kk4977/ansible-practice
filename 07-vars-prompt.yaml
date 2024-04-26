@@ -1,4 +1,4 @@
-   - name: Variables from the Prompts
+- name: Variables from the Prompts
   hosts: localhost
   vars_prompt:
   - name: USERNAME
