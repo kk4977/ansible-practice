@@ -2,7 +2,7 @@
   hosts: web
   become: yes
   tasks:
-  - name: inatall the  nginx server
+  - name: inatall the  nginx 
     ansible.builtin.dnf:
       name: nginx
       state: latest
