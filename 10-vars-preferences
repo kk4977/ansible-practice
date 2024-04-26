@@ -3,7 +3,7 @@
   vars:
     WISHES: "wishes from PLAY"
   vars_file:
-    - vars.yaml
+  - vars.yaml
   tasks:
   - name: get from args
     # vars:
