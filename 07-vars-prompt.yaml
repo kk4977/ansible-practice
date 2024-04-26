@@ -1,4 +1,4 @@
-- name: Variables from the Prompts
+   - name: Variables from the Prompts
   hosts: localhost
   vars_prompt:
   - name: USERNAME
@@ -10,4 +10,4 @@
   tasks:
   - name: print information
     ansible.builtin.debug:
-     msg: "USERNAME: {{ USERNAME }} PASSWORD: {{ PASSWORD }}"
+     msg: "USERNAME: {{ USERNAME }} PASSWORD: {{ PASSWORD }}"   
