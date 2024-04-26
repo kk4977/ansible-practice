@@ -1,8 +1,14 @@
 - name: variables from arguments
   hosts: localhost
+  vars:
+    WISHES: "wishes from PLAY"
+  vars_file:
+    - vars.yaml
   tasks:
   - name: get from args
+    vars:
+      WISHES: "wishes from TASK"
     ansible.builtin.debug:
-      msg: "Hello {{PERSON}}, Good {{WISHES}}"
+      msg: "Hello, Good {{WISHES}}"
 
       #run the command using --> ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 09-vars-args.yaml -e "PERSON=Shiva WISHES=Morning"
