@@ -2,12 +2,12 @@
   hosts: localhost
   vars:
     WISHES: "wishes from PLAY"
-  vars_files:
+  vars_file:
     - vars.yaml
   tasks:
   - name: get from args
-    vars:
-      WISHES: "wishes from TASK"
+    # vars:
+    #   WISHES: "wishes from TASK"
     ansible.builtin.debug:
       msg: "Hello, Good {{WISHES}}"
 
