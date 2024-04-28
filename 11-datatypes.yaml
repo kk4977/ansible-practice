@@ -15,7 +15,7 @@
       git: 1
       ansible: 1
     RealProject: true
-  task: 
+  tasks: 
     - name: print the variables
       ansible.builtin.debug:
         msg: "I learning the courses of {{Courses}} with the tools of {{Tools}} and has a experiences of {{Experience}} is a real project {{RealProject}}"
