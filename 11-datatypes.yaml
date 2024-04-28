@@ -1,0 +1,23 @@
+- name: datatypes
+  hosts: localhost
+  vars: 
+    courses: Devops with ansible
+    tools:
+    -Ansible
+    -Jenkins
+    -Git
+    -Docker
+    -Kubernetes
+    experience:
+      docker: 3
+      kubernetes: 2
+      jenkins: 1
+      git: 1
+      ansible: 1
+  task: 
+    -name: print the variables
+    ansible.builtin.debug:
+      msg: "I learning the courses of {{course}} with the tools of {{tools}} and has a experiences of {{experience}}"
+  
+    
+
