@@ -1,20 +1,20 @@
-- name: datatypes
+- name: datatypes         #datatypes 
   hosts: localhost
   vars: 
-    Courses: Devops with ansible
-    Tools:
+    Courses: Devops with AWS
+    Tools:  #lists
     - Ansible
     - Jenkins
     - Git
     - Docker
     - Kubernetes
-    Experience:
+    Experience:    #Dictionaries or mapping
       docker: 3
       kubernetes: 2
       jenkins: 1
       git: 1
       ansible: 1
-    RealProject: true
+    RealProject: true    #boolean
   tasks: 
     - name: print the variables
       ansible.builtin.debug:
