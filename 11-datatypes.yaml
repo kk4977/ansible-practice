@@ -1,23 +1,24 @@
 - name: datatypes
   hosts: localhost
   vars: 
-    courses: Devops with ansible
-    tools:
-    -Ansible
-    -Jenkins
-    -Git
-    -Docker
-    -Kubernetes
-    experience:
+    Courses: Devops with ansible
+    Tools:
+    - Ansible
+    - Jenkins
+    - Git
+    - Docker
+    - Kubernetes
+    Experience:
       docker: 3
       kubernetes: 2
       jenkins: 1
       git: 1
       ansible: 1
+    RealProject: true
   task: 
-    -name: print the variables
-    ansible.builtin.debug:
-      msg: "I learning the courses of {{course}} with the tools of {{tools}} and has a experiences of {{experience}}"
+    - name: print the variables
+      ansible.builtin.debug:
+        msg: "I learning the courses of {{Courses}} with the tools of {{Tools}} and has a experiences of {{Experience}} is a real project {{RealProject}}"
   
     
 
