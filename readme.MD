@@ -1,9 +1,7 @@
-# Ansible Installation Guide
+# Ansible Installation Guide (repo created by sivakumar)
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Ansible Version](https://img.shields.io/badge/Ansible-Latest-blue.svg)](https://docs.ansible.com/ansible/latest/index.html)
-[![GitHub Issues](https://img.shields.io/github/issues/your/repo.svg)](https://github.com/your/repo/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/your/repo.svg)](https://github.com/your/repo/pulls)
 
 ## Overview
 
