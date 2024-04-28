@@ -3,7 +3,7 @@
   become: true
   tasks:
   - name: check the user exists or not
-    ansible.builtin.command: id expense
+    shell: id expense
     register: USER
     ignore_errors: true
   - name: create user
@@ -11,8 +11,9 @@
       msg: "User Info : {{USER}}"
 
   - name: create a user
-    ansible.builtin.command: useradd expense
+    shell: useradd expense
     when: USER.rc != 0
   - name: hello
     ansible.builtin.debug: 
       msg: " hello"
+   
