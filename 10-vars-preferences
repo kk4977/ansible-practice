@@ -1,4 +1,4 @@
-- name: variables from preferences
+- name: variables from preferences ORDER
   hosts: localhost
   vars_prompt:
   - name: WISHES
@@ -15,6 +15,7 @@
     #   WISHES: "wishes from TASK"
     ansible.builtin.debug:
       msg: "Hello, Good {{WISHES}}"
+      
 
       #run the command using --> ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 09-vars-args.yaml -e "PERSON=Shiva WISHES=Morning"
 ################################
