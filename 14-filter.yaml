@@ -41,4 +41,4 @@
   tasks:
   - name:  print the min and max values
     ansible.builtin.debug:
-      msg: " min age: {{ age | min}} and max age: {{ age | max"
+      msg: " min age: {{ age | min}} and max age: {{ age | max}}"
