@@ -1,10 +1,10 @@
 - name: loops
   hosts: localhost
   tasks:
-    - name: loops
-      ansible.builtin.debug:
-      msg: " hello {{ item }}"
-      loop:
+  - name: loops
+    ansible.builtin.debug:
+        msg: " hello {{ item }}"
+    loop:
       - linux
       - AWS
       - Azure
