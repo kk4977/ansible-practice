@@ -9,7 +9,7 @@
     loop:
     - { name: nginx , state: latest}
     - { name: git  , state: absent }
-    - { name: mysql, state: ilatest}
+    - { name: mysql, state: latest}
     - { name: php  , state: absent}
 
   
