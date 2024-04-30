@@ -1,10 +1,10 @@
 - name: Install the Packages
-  hosts: localhost
-  become: true
+  hosts: web
+  become: yes
   tasks:
   - name: inatall the Packages
     ansible.builtin.dnf:
-      name: " install {{items}}"
+      name: "{{ items }}"
       state: latest
     loop:
     - nginx
