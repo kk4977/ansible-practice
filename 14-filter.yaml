@@ -71,18 +71,3 @@
   - name: After converting
     ansible.builtin.debug:
       msg: " after conversion: {{my_list | items2dict}}"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      {'key': 'Course', 'value': 'Ansible'}, {'key': 'Trainer', 'value': 'sivakumar'}, {'key': 'Duration', 'value': '120hr'}
