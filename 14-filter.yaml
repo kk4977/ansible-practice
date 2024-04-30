@@ -31,5 +31,5 @@
   - numbers: [1,2,3,2,3,4,5,5,5,7,8]
   tasks:
   - name: remove the Duplicates
-   ansible.builtin.debug:
-     msg: "{{ numbers | unique}}"
+    ansible.builtin.debug:
+      msg: "{{ numbers | unique}}"
