@@ -47,7 +47,7 @@ ansible --version
 You should see output displaying the Ansible version and other information.
 
 ### Getting Started
-Once Ansible is installed, you can start automating tasks and managing your infrastructure efficiently. Refer to the Ansible Documentation for guidance on using Ansible and its various features.
+Once Ansible is installed,you can start automating tasks and managing your infrastructure efficiently. Refer to the Ansible Documentation for guidance on using Ansible and its various features.
 
 ### Feedback and Support
 If you encounter any issues during installation or have suggestions for improving this guide, please feel free to submit an issue or contact the Ansible community for assistance.
